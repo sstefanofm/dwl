@@ -59,11 +59,11 @@ static const MonitorRule monrules[] = {
 
 /* keyboard */
 static const struct xkb_rule_names xkb_rules = {
-	/* can specify fields: rules, model, layout, variant, options */
-	/* example:
-	.options = "ctrl:nocaps",
-	*/
-	.options = NULL,
+  .rules = NULL,
+  .model = "pc105",
+  .layout = "us,es",
+  .variant = NULL,
+  .options = "grp:alt_shift_toggle",
 };
 
 static const int repeat_rate = 25;
