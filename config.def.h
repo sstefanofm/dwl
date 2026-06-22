@@ -134,6 +134,7 @@ static const Key keys[] = {
 	{ MODKEY,                    XKB_KEY_d,          spawn,          {.v = menucmd} },
 	{ MODKEY,		                 XKB_KEY_Return,     spawn,          {.v = termcmd} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_S,          spawn,          SHCMD("ss_copy.py") },
+  { MODKEY,                    XKB_KEY_r,          spawn,          SHCMD("ri-dwl.sh") },
 	{ MODKEY,                    XKB_KEY_j,          focusstack,     {.i = +1} },
   { MODKEY,                    XKB_KEY_b,          togglebar,      {0} },
 	{ MODKEY,                    XKB_KEY_k,          focusstack,     {.i = -1} },
