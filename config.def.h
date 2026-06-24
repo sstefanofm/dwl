@@ -16,6 +16,8 @@ static const char *fonts[]                 = {"JetBrainsMono Nerd Font:size=11:s
 static const float rootcolor[]             = COLOR(0x000000ff);
 /* This conforms to the xdg-protocol. Set the alpha to zero to restore the old behavior */
 static const float fullscreen_bg[]         = {0.1f, 0.1f, 0.1f, 1.0f}; /* You can also use glsl colors */
+static const char *cursor_theme            = "Adwaita";
+static const char cursor_size[]            = "20"; /* Make sure it's a valid integer, otherwise things will break */
 
 #include "colors/white.h"
 static uint32_t colors[][3] = COLORS;
