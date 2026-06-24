@@ -21,7 +21,15 @@ static uint32_t colors[][3]                = {
 };
 
 /* tagging - TAGCOUNT must be no greater than 31 */
-static char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+
+/*
+ * CLASSIC */
+// static char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+
+/*
+ * KANJI */
+static char *tags[] = { "一", "二", "三", "四", "五", "六", "七", "八", "九" };
+
 #define TAGCOUNT (LENGTH(tags))
 
 /* logging */
