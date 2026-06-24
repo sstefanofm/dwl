@@ -1,5 +1,7 @@
 #pragma once
 
+// fg, bg, border
+
 #define COLORS \
 { \
     [SchemeNorm] = { 0xbbbbbbff, 0x222222ff, 0x444444ff }, \

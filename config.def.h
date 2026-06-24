@@ -19,7 +19,7 @@ static const float fullscreen_bg[]         = {0.1f, 0.1f, 0.1f, 1.0f}; /* You ca
 static const char *cursor_theme            = "Skyrim";
 static const char cursor_size[]            = "24"; /* Make sure it's a valid integer, otherwise things will break */
 
-#include "colors/white.h"
+#include "colors/nord.h"
 static uint32_t colors[][3] = COLORS;
 
 /* tagging - TAGCOUNT must be no greater than 31 */
