@@ -12,12 +12,12 @@ static const unsigned int gappx            = 10; /* gap pixel between windows */
 static const unsigned int borderpx         = 1;  /* border pixel of windows */
 static const int showbar                   = 1; /* 0 means no bar */
 static const int topbar                    = 1; /* 0 means bottom bar */
-static const char *fonts[]                 = {"JetBrainsMono Nerd Font:size=11:style=Regular"};
+static const char *fonts[]                 = {"GoMono Nerd Font:size=11:style=Regular"};
 static const float rootcolor[]             = COLOR(0x000000ff);
 /* This conforms to the xdg-protocol. Set the alpha to zero to restore the old behavior */
 static const float fullscreen_bg[]         = {0.1f, 0.1f, 0.1f, 1.0f}; /* You can also use glsl colors */
-static const char *cursor_theme            = "Adwaita";
-static const char cursor_size[]            = "20"; /* Make sure it's a valid integer, otherwise things will break */
+static const char *cursor_theme            = "Skyrim";
+static const char cursor_size[]            = "24"; /* Make sure it's a valid integer, otherwise things will break */
 
 #include "colors/white.h"
 static uint32_t colors[][3] = COLORS;
