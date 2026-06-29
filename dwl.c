@@ -71,6 +71,7 @@
 
 #include "util.h"
 #include "drwl.h"
+#include "stf/wkblayout.h"
 
 /* macros */
 #define MAX(A, B)               ((A) > (B) ? (A) : (B))
@@ -1045,6 +1046,11 @@ createkeyboard(struct wlr_keyboard *keyboard)
 
 	/* Add the new keyboard to the group */
 	wlr_keyboard_group_add_keyboard(kb_group->wlr_group, keyboard);
+
+  wkblayout(
+    kb_group->wlr_group->keyboard.xkb_state,
+    kb_group->wlr_group->keyboard.keymap
+  );
 }
 
 KeyboardGroup *
@@ -1878,6 +1884,11 @@ keypressmod(struct wl_listener *listener, void *data)
 	/* Send modifiers to the client. */
 	wlr_seat_keyboard_notify_modifiers(seat,
 			&group->wlr_group->keyboard.modifiers);
+
+  wkblayout(
+    kb_group->wlr_group->keyboard.xkb_state,
+    kb_group->wlr_group->keyboard.keymap
+  );
 }
 
 int
